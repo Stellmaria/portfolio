@@ -1,6 +1,7 @@
 :root {
     --bg: #ffffff;
     --surface: #f5f7fa;
+    --surface-strong: #eef1f5;
     --text: #111111;
     --muted: #667085;
     --border: #e4e7ec;
@@ -38,12 +39,12 @@ a {
 }
 
 .container {
-    width: min(1100px, calc(100% - 40px));
+    width: min(1120px, calc(100% - 40px));
     margin-inline: auto;
 }
 
 .section {
-    padding: 88px 0;
+    padding: 92px 0;
 }
 
 .section-eyebrow {
@@ -57,14 +58,16 @@ a {
 }
 
 .section-title {
-    margin: 0 0 48px;
+    max-width: 900px;
+    margin: 0 auto 48px;
     font-size: clamp(34px, 5vw, 48px);
     line-height: 1.15;
     text-align: center;
+    text-wrap: balance;
 }
 
 .section-intro {
-    max-width: 760px;
+    max-width: 800px;
     margin: -28px auto 42px;
     color: var(--muted);
     text-align: center;
@@ -89,21 +92,47 @@ a {
     transform: translateY(-2px);
 }
 
+.text-link,
+.profile-link,
+.project-link {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-link,
+.project-link {
+    border-bottom: 1px solid currentColor;
+}
+
+.text-link:hover,
+.profile-link:hover,
+.project-link:hover {
+    opacity: 0.68;
+}
+
 .button:focus-visible,
+.text-link:focus-visible,
+.profile-link:focus-visible,
 .project-link:focus-visible,
 .footer-button:focus-visible,
 .header-arrow:focus-visible {
-    outline: 3px solid #ffffff;
+    outline: 3px solid #111111;
     outline-offset: 4px;
+}
+
+.header .button:focus-visible,
+.header-arrow:focus-visible,
+.footer-button:focus-visible {
+    outline-color: #ffffff;
 }
 
 @media (max-width: 640px) {
     .container {
-        width: min(100% - 28px, 1100px);
+        width: min(100% - 28px, 1120px);
     }
 
     .section {
-        padding: 64px 0;
+        padding: 66px 0;
     }
 
     .section-title {
