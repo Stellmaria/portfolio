@@ -1,6 +1,6 @@
 # Portfolio
 
-Static personal portfolio for Anastasia Melnikova, focused on Java backend work and public GitHub projects.
+Static personal portfolio for Anastasia Melnikova, focused on backend engineering, automation and public GitHub projects.
 
 ## Live site
 
@@ -8,9 +8,9 @@ GitHub Pages: https://stellmaria.github.io/portfolio/
 
 ## Current profile focus
 
-The site reflects technologies that are currently used across the public repositories rather than a generic skills wishlist.
+The site reflects technologies currently used across both public and private projects. Public repositories remain the visible portfolio; private repositories contribute only anonymized stack and capability information, without publishing repository names, source code or internal implementation details.
 
-### Backend
+### Java backend
 
 - Java 17
 - Spring Boot / Spring MVC
@@ -18,13 +18,30 @@ The site reflects technologies that are currently used across the public reposit
 - Spring Data JPA / Hibernate
 - Jakarta Servlet / JSP
 
+### Python and automation
+
+- Python 3.13
+- aiogram 3 / Telegram Bot API
+- REST API integrations
+- asynchronous workflows
+- Redroid / ADB automation
+
 ### Data
 
 - PostgreSQL / SQL
+- SQLite
 - JDBC
 - QueryDSL
 - Liquibase
 - Flyway
+
+### AI integrations
+
+- OpenAI API / Responses API
+- Structured Outputs
+- image-generation provider integrations
+- Ollama and vision-language models
+- fallback pipelines for external AI services
 
 ### Testing and build
 
@@ -32,18 +49,21 @@ The site reflects technologies that are currently used across the public reposit
 - Mockito
 - Testcontainers
 - Spring Test
+- Python unittest
 - Maven
 - Gradle
 
-### Web and delivery
+### Delivery and operations
 
-- Thymeleaf
-- HTML / CSS / JavaScript
+- Docker / Docker Compose
 - Git / GitHub
-- GitHub Actions
-- Docker Compose
+- GitHub Actions / CI/CD
+- GHCR
+- Trivy and SBOM generation
+- SSH tunnels
+- PostgreSQL backup and restore workflows
 
-## Featured projects
+## Featured public projects
 
 - [library](https://github.com/Stellmaria/library) — Spring Boot MVC library application with role-based security, PostgreSQL, QueryDSL, Liquibase and Testcontainers;
 - [airport](https://github.com/Stellmaria/airport) — Java 17 JDBC/DAO airport domain with connection pooling, PostgreSQL integrity rules and integration tests;
@@ -54,10 +74,11 @@ The site reflects technologies that are currently used across the public reposit
 
 ## Site sections
 
-- responsive hero with current backend focus;
+- responsive hero with backend and automation focus;
 - profile/about section linked to the GitHub account;
-- grouped current technology stack;
-- six selected public project cards with accurate descriptions and direct repository links;
+- grouped technology stack derived from public and private work;
+- six selected public project cards with direct repository links;
+- no private repository names or links are exposed;
 - mobile-friendly layout and accessible focus states;
 - image fallback for the hero;
 - background video only on larger screens when reduced motion is not requested.
