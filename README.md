@@ -2,6 +2,10 @@
 
 Static personal portfolio for Anastasia Melnikova, focused on Java backend learning projects and public GitHub work.
 
+## Live site
+
+GitHub Pages: https://stellmaria.github.io/portfolio/
+
 ## What is included
 
 - responsive hero, skills and project sections;
