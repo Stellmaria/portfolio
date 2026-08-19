@@ -2,90 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anastasia Melnikova's Java backend portfolio with selected projects and skills.">
+    <title>Anastasia Melnikova | Java Backend Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
-<link rel="stylesheet" href="./css/main.css">
-<link rel="stylesheet" href="./css/header.css">
-<link rel="stylesheet" href="./css/footer.css">
-<link rel="stylesheet" href="./css/portfolio.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <body>
-<div class="header" id="header">
-    <h1 class="header-title">Anastasia Melnikova</h1>
-    <p class="header-subtitle">Beginner backend programmer</p>
-    <a href="#portfolio" class="header-arrow">
-        <img src="img/header/chevron-down.svg" alt="arrow">
+<header class="header" id="header">
+    <div class="header-overlay" aria-hidden="true"></div>
+    <div class="header-content container">
+        <p class="header-kicker">Java backend portfolio</p>
+        <h1 class="header-title">Anastasia Melnikova</h1>
+        <p class="header-subtitle">Java · Backend · Learning projects</p>
+        <div class="header-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="https://github.com/Stellmaria" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+        </div>
+    </div>
+    <a href="#skills" class="header-arrow" aria-label="Scroll to skills">
+        <img src="./img/header/chevron-down.svg" alt="">
     </a>
-</div>
+</header>
 
-<div class="portfolio" id="portfolio">
-    <div class="container">
-        <h2 class="skills"> Skills</h2>
-        <div class="portfolio-class-wrapper">
-            <div class="card">
-                <img class="card-img" src="img/skills/java.jpg" alt="java">
-                <h3 class="card-title">Java</h3>
-                <p>Java Programming</p>
-            </div>
-            <div class="card">
-                <img class="card-img" src="img/skills/git.jpg" alt="git">
-                <h3 class="card-title">Git</h3>
-                <p>Tracking changes in your project files</p>
-            </div>
-            <div class="card">
-                <img class="card-img" src="img/skills/junit.jpg" alt="java">
-                <h3 class="card-title">Junit5</h3>
-                <p>Software testing</p>
-            </div>
-            <div class="card">
-                <img class="card-img" src="img/skills/maven.jpg" alt="java">
-                <h3 class="card-title">Maven</h3>
-                <p>Using a framework to automate project builds</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
+<main>
+    <section class="portfolio section" id="skills" aria-labelledby="skills-title">
         <div class="container">
-            <div class="footer-row">
-                <div class="footer-copyright footer-col">
-                    <div class="footer-copyright-name">© Anastasia Melnikova</div>
-                    <p>Software development</p>
-                </div>
-                <div class="footer-icons">
-                    <p>My social media profiles:</p>
-                    <div class="footer-items footer-col">
-                        <a href="#" target="_blank">
-                            <img src="./img/footer/facebook.svg" alt="facebook">
-                        </a>
-                        <a href="#" target="_blank">
-                            <img src="./img/footer/github.svg" alt="github">
-                        </a>
-                        <a href="#" target="_blank">
-                            <img src="./img/footer/instagram.svg" alt="instagram">
-                        </a>
-                        <a href="#" target="_blank">
-                            <img src="./img/footer/linkedin.svg" alt="linkedin">
-                        </a>
-                        <a href="#" target="_blank">
-                            <img src="img/footer/vk.svg" alt="vk">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-contacts footer-col">
-                    <a href="#" class="footer-button" target="_blank">
-                        Contact me on telegram
-                    </a>
-                    <p>Write to me to order and find out the cost of developing your project</p>
-                </div>
+            <p class="section-eyebrow">Core stack</p>
+            <h2 class="section-title" id="skills-title">Skills</h2>
+            <div class="skills-grid">
+                <article class="card">
+                    <img class="card-img" src="./img/skills/java.jpg" alt="Java logo" loading="lazy">
+                    <h3 class="card-title">Java</h3>
+                    <p>Object-oriented programming, collections, exceptions, concurrency and backend fundamentals.</p>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="./img/skills/git.jpg" alt="Git logo" loading="lazy">
+                    <h3 class="card-title">Git & GitHub</h3>
+                    <p>Version control, branches, pull requests and repository-based development workflows.</p>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="./img/skills/junit.jpg" alt="JUnit logo" loading="lazy">
+                    <h3 class="card-title">JUnit 5</h3>
+                    <p>Unit testing, assertions, test structure and automated verification of Java code.</p>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="./img/skills/maven.jpg" alt="Maven logo" loading="lazy">
+                    <h3 class="card-title">Maven & Gradle</h3>
+                    <p>Dependency management, repeatable builds, test execution and Java project packaging.</p>
+                </article>
             </div>
         </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <p class="section-eyebrow">Selected work</p>
+            <h2 class="section-title" id="projects-title">Projects</h2>
+            <p class="section-intro">A selection of public repositories that show backend practice across Java Core, Servlets, persistence and Spring Boot.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div>
+                        <p class="project-type">Jakarta Servlet</p>
+                        <h3>Servlets portfolio demo</h3>
+                        <p>Session-based authentication demo with GET/POST request handling, JSP views, logout, JUnit 5, Mockito and Maven WAR packaging.</p>
+                    </div>
+                    <ul class="project-tags" aria-label="Technologies">
+                        <li>Java</li>
+                        <li>Jakarta Servlet</li>
+                        <li>JSP</li>
+                        <li>JUnit 5</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/Stellmaria/servlets" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <p class="project-type">Spring Boot</p>
+                        <h3>Library system</h3>
+                        <p>Library application for searching and ordering books, built around Spring Boot, persistence, security and PostgreSQL tooling.</p>
+                    </div>
+                    <ul class="project-tags" aria-label="Technologies">
+                        <li>Spring Boot</li>
+                        <li>JPA</li>
+                        <li>PostgreSQL</li>
+                        <li>Security</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/Stellmaria/library" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <p class="project-type">Java Web</p>
+                        <h3>Airport</h3>
+                        <p>Java web project packaged as a WAR and using Jakarta Servlet, Hibernate and PostgreSQL for backend and persistence practice.</p>
+                    </div>
+                    <ul class="project-tags" aria-label="Technologies">
+                        <li>Java</li>
+                        <li>Hibernate</li>
+                        <li>PostgreSQL</li>
+                        <li>Servlet</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/Stellmaria/airport" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <article class="project-card">
+                    <div>
+                        <p class="project-type">Course practice</p>
+                        <h3>Java Core</h3>
+                        <p>Course repository covering Java fundamentals, OOP, collections, exceptions, generics, lambdas, I/O, concurrency, reflection, XML and networking.</p>
+                    </div>
+                    <ul class="project-tags" aria-label="Technologies">
+                        <li>Java</li>
+                        <li>Collections</li>
+                        <li>Concurrency</li>
+                        <li>Gradle</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/Stellmaria/course-java-core" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-row">
+        <div class="footer-copy">
+            <strong>Anastasia Melnikova</strong>
+            <p>Java backend portfolio and learning projects.</p>
+        </div>
+        <div class="footer-contact">
+            <p>Code, repositories and project history:</p>
+            <a class="footer-button" href="https://github.com/Stellmaria" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+        </div>
     </div>
-</div>
-<script src="libs/jquery/jquery-3.6.0.min.js"></script>
-<script src="libs/vide/jquery.vide.min.js"></script>
-<script src=./js/main.js></script>
+</footer>
+
+<script src="./libs/jquery/jquery-3.6.0.min.js" defer></script>
+<script src="./libs/vide/jquery.vide.min.js" defer></script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>
